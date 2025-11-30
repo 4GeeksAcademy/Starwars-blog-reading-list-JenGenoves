@@ -27,7 +27,7 @@ export function EntityCard({ item, type }) {
         {!imgError ? (
           <img 
             src={getImgUrl(type, item.uid)} 
-            alt={item.name}
+            alt={item.name || "Sin nombre"}
             onError={() => setImgError(true)}
             className="w-100 h-100 object-fit-cover" // object-fit-cover para object-cover
           />

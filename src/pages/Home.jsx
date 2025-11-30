@@ -21,7 +21,7 @@ export function Home() {
       try {
         // Fetch de las tres categorías en paralelo
         const [peopleRes, vehiclesRes, planetsRes] = await Promise.all([
-          fetch(`${API_URL}/people?page=1&limit=10`),
+          fetch(`${API_URL}/people?page=1&limit=20`),
           fetch(`${API_URL}/vehicles?page=1&limit=10`),
           fetch(`${API_URL}/planets?page=1&limit=10`)
         ]);
